@@ -59,7 +59,7 @@ class BinarySearchTree {
            meaning that if the `left` pointer is empty, 
            then we can just instantiate and insert the new node 
            as the left child of that node, passing `this` as the parent */
-      if (this.left == null) {
+      if (this.left === null) {
         this.left = new BinarySearchTree(key, value, this);
       }
       /* If the node has an existing left child, 
@@ -72,7 +72,7 @@ class BinarySearchTree {
     /* Similarly, if the new key is greater than the node's key 
        then you do the same thing, but on the right-hand side */
     else {
-      if (this.right == null) {
+      if (this.right === null) {
         this.right = new BinarySearchTree(key, value, this);
       }
       else {
@@ -83,7 +83,7 @@ class BinarySearchTree {
 
   find(key) {
     // If the item is found at the root then return that value
-    if (this.key == key) {
+    if (this.key === key) {
       return this.value;
     }
     /* If the item you are looking for is less than the root 
