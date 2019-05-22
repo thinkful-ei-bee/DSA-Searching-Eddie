@@ -205,3 +205,29 @@ console.log(binarySearch(sortedList,16));
 //14-15
 //15
 //-1
+
+// Find a book
+// the algorithm would be similar to binary search
+// look for the middle number and compare it to the dewey decimal number in the library
+// if the number is greater look through the top half of the library, if lower look through the bottom half of the library
+// reapeat until we find the title matches or return null if our start is greater than our end index
+
+// Searching in a BST
+// 1) Given a binary search tree whose in-order and pre-order traversals are respectively 14 15 19 25 27 35 79 89 90 91 and 35 25 15 14 19 27 89 79 91 90. What would be its postorder traversal?
+//          35
+//       /     \
+//      25     89
+//     / \    /  \
+//   15  27  79  91
+//  /  \        /
+// 14  19      90
+// postorder: 14 19 90 15 27 79 91 25 89 35
+
+// 2) The post order traversal of a binary search tree is 5 7 6 9 11 10 8. What is its pre-order traversal?
+//       8
+//     /   \
+//    6     10
+//   / \    / \
+//  5   7  9   11
+// preorder: 8 6 5 7 10 9 11
+
